@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Namakani</title>
+<meta name="description" content="Namakani — marketplace en construcción.">
+<style>
+  :root {
+    --bg: #faf9f7;
+    --fg: #1c1a17;
+    --muted: #6b655c;
+    --line: #e4e0d9;
+    --accent: #b45309;
+  }
+  :root:not([data-theme="light"]) {
+    @media (prefers-color-scheme: dark) {
+      --bg: #17150f;
+      --fg: #f2efe9;
+      --muted: #a29a8c;
+      --line: #322d24;
+      --accent: #f0a04b;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17150f;
+      --fg: #f2efe9;
+      --muted: #a29a8c;
+      --line: #322d24;
+      --accent: #f0a04b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 48px 16px;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 32rem; text-align: center; }
+  h1 {
+    margin: 0 0 .5rem;
+    font-size: clamp(2.5rem, 9vw, 4rem);
+    letter-spacing: -.03em;
+    font-weight: 600;
+  }
+  .dot { color: var(--accent); }
+  p { margin: 0 auto 2rem; color: var(--muted); max-width: 26rem; }
+  .tag {
+    display: inline-block;
+    padding: .35rem .8rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: .8rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    font-size: .85rem;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <span class="tag">En construcción</span>
+    <h1>Namakani<span class="dot">.</span></h1>
+    <p>Un marketplace en camino. Estamos armando los cimientos; pronto vas a poder comprar y vender aquí.</p>
+    <footer>namakani.me</footer>
+  </main>
+</body>
+</html>
